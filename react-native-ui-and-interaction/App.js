@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Style from './components/Style';
 // import FixedDimensionsBasics from './components/FixedDimensionsBasics';
-// import FlexDimensionsBasics from './components/FlexDimensionsBasics';
+import FlexDimensionsBasics from './components/FlexDimensionsBasics';
 // import PercentageDimensionsBasics from './components/PercentageDimensionsBasics';
-import FixedDimensionsBasics from './components/FixedDimensionBasics';
+// import FixedDimensionsBasics from './components/FixedDimensionBasics';
 
 export default function App() {
   return (
@@ -14,9 +14,9 @@ export default function App() {
     //   <FlexDimensionsBasics/>
     // </ScrollView>
     <>
-      {/* <FlexDimensionsBasics/> */}
+      <FlexDimensionsBasics/>
       {/* <PercentageDimensionsBasics/> */}
-      <FixedDimensionsBasics />
+      {/* <FixedDimensionsBasics /> */}
     </>
   );
 }
