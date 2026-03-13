@@ -6,6 +6,8 @@ import DirectionLayout from './components/DirectionLayout';
 import JustifyContentBasics from './components/JustifyContentBasics';
 import AlignItemsLayout from './components/AlignItemsLayout';
 import AlignSelfLayout from './components/AlignSelfLayout';
+import AlignContentLayout from './components/AlignContentLayout';
+
 
 export default function App() {
   return (
@@ -14,7 +16,8 @@ export default function App() {
     // <DirectionLayout />
     // <JustifyContentBasics />
     // <AlignItemsLayout />
-    <AlignSelfLayout />
+    // <AlignSelfLayout />
+    <AlignContentLayout />
   );
 }
 
