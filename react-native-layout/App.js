@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-// import Login from './src/screens/Login';
-// import Signup from './src/screens/Signup';
+import Login from './src/screens/Login';
+import Signup from './src/screens/Signup';
 import Todo from './src/screens/Todo';
 
 const styles = StyleSheet.create({
@@ -31,12 +31,23 @@ const styles = StyleSheet.create({
 })
 
 export default function App() {
- 
+  const [page, setPage] = useState('login')
   return (
     <>
-      <Todo/>
+      {
+        page == 'login' ? <Login setPage={setPage} styles={styles}/> : <Signup setPage={setPage} styles={styles}/> 
+      }
     </>
   );
 }
+
+// export default function App() {
+ 
+//   return (
+//     <>
+//       <Todo/>
+//     </>
+//   );
+// }
 
 
