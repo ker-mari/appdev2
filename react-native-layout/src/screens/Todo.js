@@ -40,7 +40,7 @@ export default function Todo() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Todo App</Text>
+      <Text style={styles.title}>To do List</Text>
 
       
       <View style={styles.searchWrapper}>
@@ -59,7 +59,7 @@ export default function Todo() {
           style={styles.input}
           value={todo}
           onChangeText={setTodo}
-          placeholder="Enter a todo"
+          placeholder="Enter a to do"
         />
         <TouchableOpacity style={styles.addBtn} onPress={handleAddTodo}>
           <Ionicons name="add" size={24} color="white" />
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 50,
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#cadef1a8',
   },
   title: {
     fontSize: 28,
